@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лаба 1-2: Таблица умножения</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px;
+        }
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+            width: 40px;
+        }
+        .header {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Упражнение 2: Таблица умножения 10x10</h1>
+    
+    <script>
+    document.write('<table>');        
+       
+        document.write('<tr>');
+        document.write('<td class="header">×</td>');
+        for (let i = 1; i <= 10; i++) {
+            document.write('<td class="header">' + i + '</td>');
+        }
+        document.write('</tr>');        
+       
+        for (let i = 1; i <= 10; i++) {
+            document.write('<tr>');
+            document.write('<td class="header">' + i + '</td>');
+            
+            for (let j = 1; j <= 10; j++) {
+                document.write('<td>' + (i * j) + '</td>');
+            }
+            document.write('</tr>');
+        }
+        
+        document.write('</table>');
+    </script>
+</body>
+</html>
