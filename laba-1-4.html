@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лаба 1-4: Классы и объекты</title>
+</head>
+<body>
+    <h1>Упражнение 4: Создание и использование объектов</h1>
+    
+    <script>        
+        class NewClass {            
+            constructor(title, url) {               
+                this.title = title;
+                this.url = url;
+            }            
+            
+            show() {
+                document.write("<div style='border: 1px solid #ccc; padding: 10px; margin: 10px;'>");
+                document.write("<h3>Название: " + this.title + "</h3>");
+                document.write("<p>URL: <a href='" + this.url + "' target='_blank'>" + this.url + "</a></p>");
+                document.write("</div>");
+            }
+        }        
+        
+        var obj1 = new NewClass("Google", "https://www.google.com");
+        var obj2 = new NewClass("YouTube", "https://www.youtube.com");
+        var obj3 = new NewClass("GitHub", "https://www.github.com");        
+        
+        document.write("<h2>Созданные объекты:</h2>");
+        obj1.show();
+        obj2.show();
+        obj3.show();        
+        
+        var userTitle = prompt("Введите название сайта:");
+        var userUrl = prompt("Введите URL сайта:");
+        
+        if (userTitle && userUrl) {
+            var userObj = new NewClass(userTitle, userUrl);
+            document.write("<h2>Ваш объект:</h2>");
+            userObj.show();
+        }
+    </script>
+</body>
+</html>
