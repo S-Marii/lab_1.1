@@ -24,20 +24,20 @@
     <h1>Упражнение 2: Таблица умножения 10x10</h1>
     
     <script>
-    document.write('<table>');        
+        document.write('<table>');        
        
         document.write('<tr>');
         document.write('<td class="header">×</td>');
-        for (let i = 1; i <= 10; i++) {
+        for (var i = 1; i <= 10; i++) {
             document.write('<td class="header">' + i + '</td>');
         }
         document.write('</tr>');        
        
-        for (let i = 1; i <= 10; i++) {
+        for (var i = 1; i <= 10; i++) {
             document.write('<tr>');
             document.write('<td class="header">' + i + '</td>');
             
-            for (let j = 1; j <= 10; j++) {
+            for (var j = 1; j <= 10; j++) {
                 document.write('<td>' + (i * j) + '</td>');
             }
             document.write('</tr>');
