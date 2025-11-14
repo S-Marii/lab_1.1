@@ -5,28 +5,28 @@
     <title>Трехколоночный макет</title>
     <style type="text/css">
         body {
-            font: 0.8em Arial, Helvetica, sans-serif; /* Шрифт на веб-странице */
-            background: #D7E1F2; /* Цвет фона */
-            color: #ffe; /* Цвет текста */
+            font: 0.8em Arial, Helvetica, sans-serif;
+            background: #D7E1F2;
+            color: #ffe;
         }
-        a { color: #008BCE; /* Цвет ссылок */ }
+        a { color: #008BCE;}
         #container {
-            width: 500px; /* Ширина макета */
-            margin: 0 auto; /* Выравниваем по центру */
-            background: #FCE600; /* Цвет колонок */
+            width: 500px;
+            margin: 0 auto;
+            background: #FCE600;
         }
         header { 
-            font-size: 2.2em; /* Размер текста */
-            text-align: center; /* Выравнивание по центру */
-            padding: 5px; /* Отступы вокруг текста */
-            background: #D71920; /* Цвет фона шапки */
+            font-size: 2.2em;
+            text-align: center;
+            padding: 5px;
+            background: #D71920;
         }
         nav, aside {
             float: left; width: 110px; padding: 5px;
         }
         article {
             background: #54B948;
-            margin: 0 120px; /* Ширина колонок */
+            margin: 0 120px;
             padding: 10px;
         }
         aside {
@@ -34,9 +34,9 @@
         }
         h2 { margin: 0 0 1em; }
         footer { 
-            clear: both; /* Отменяем действие float */
-            padding: 5px; /* Отступы вокруг текста */
-            background: #D71920; /* Цвет фона шапки */
+            clear: both;
+            padding: 5px;
+            background: #D71920;
         }
     </style>
 </head>
